@@ -1,7 +1,7 @@
 ---
 - include: bigip_license/license.yml 
   vars:
-    - key: "TNCDO-GRKLJ-HVWUT-XCGTD-EFJJFNQ"
+    - key: "K5599-98071-25338-63992-9099657"
 
 - include: bigip_vlan/add_untagged_vlan.yml 
   vars:
@@ -40,7 +40,7 @@
 
 - include: bigip_device_ntp/set_timezone.yml 
   vars:
-    - timezone: "America/New_York"
+    - timezone: "Japan"
 
 ##bug - https://github.com/mcgonagle/ansible_f5/issues/22
 ##- include: bigip_hostname/set_hostname.yml hostname="bigip.localhost.localdomain"
@@ -53,9 +53,9 @@
 
 - include: bigip_user/add_user.yml 
   vars:
-    - username_credential: "tom" 
+    - username_credential: "kam" 
     - password_credential: "password" 
-    - full_name: "Thomas A. McGonagle" 
+    - full_name: "Terence Kam" 
     - partition_access: "all:admin" 
     - update_password: "on_create"
 
