@@ -1,0 +1,10 @@
+---
+- name: Disable Setup Wizard 
+  bigip_command:
+    user: "{{ username }}"
+    password: "{{ password }}"
+    server: "{{ inventory_hostname }}"
+    commands: modify sys db setup.run value false
+    validate_certs: "no"
+  delegate_to: localhost
+...

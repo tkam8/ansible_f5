@@ -69,6 +69,8 @@
 
 - include: bigip_ssl_certificate/import_certificate.yml
 
+- include: bigip_command/disable_wizard.yml
+
 ##bug - https://github.com/mcgonagle/ansible_f5/issues/23
 ##- include: bigip_partition/add_partition.yml name="foo"
 
