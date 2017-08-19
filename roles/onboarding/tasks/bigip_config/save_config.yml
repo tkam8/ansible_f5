@@ -1,10 +1,10 @@
 ---
 - name: Save Config 
-  bigip_command:
+  bigip_config:
     user: "{{ username }}"
     password: "{{ password }}"
     server: "{{ inventory_hostname }}"
-    commands: save sys config
+    save: yes
     validate_certs: "no"
   delegate_to: localhost
 ...
