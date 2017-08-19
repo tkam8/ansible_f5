@@ -48,6 +48,9 @@
 
 - include: bigip_iapp_service/appsvcs.yml
   when: state == "present"
+  
+- include: bigip_config/save_config.yml
+  when: state == "present"
 
 ###############
 #Remove objects
@@ -89,5 +92,8 @@
   when: state == "absent"
 
 - include: bigip_iapp_template/appsvcs.yml
+  when: state == "absent"
+
+- include: bigip_config/save_config.yml
   when: state == "absent"
 ...
