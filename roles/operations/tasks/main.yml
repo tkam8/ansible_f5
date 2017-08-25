@@ -4,7 +4,7 @@
 ############
 - include: bigip_node/add_node.yml 
   vars: 
-    - host: "172.1.1.10" 
+    - host: "172.1.1.11" 
     - name: "member1" 
     - monitor: "/Common/icmp"
   when: state == "present"
