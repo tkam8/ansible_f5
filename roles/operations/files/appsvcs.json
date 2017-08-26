@@ -61,7 +61,7 @@
             {
                "row":[
                   "0",
-                  "http-uri/request/path",
+                  "http-host/request/host",
                   "no",
                   "contains",
 				  "wordpress.f5demo.com",
@@ -448,7 +448,7 @@
       },
       {
          "name":"vs__ProfileSecurityLogProfiles",
-         "value":"",
+         "value":"/Common/'Log all requests'",
          "encrypted":"no"
       },
       {
