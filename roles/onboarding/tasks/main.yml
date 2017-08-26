@@ -1,7 +1,10 @@
 ---
+# Issue dhcp needs to be disabled - https://github.com/mcgonagle/ansible_f5/issues/10
+- include: bigip_device_dns/set_dns.yml name_server1="8.8.8.8" name_server2="8.8.4.4" search_domain1="localdomain" search_domain2="lab.local" 
+
 - include: bigip_license/license.yml 
   vars:
-    - key: "K5599-98071-25338-63992-9099657"
+    - key: "O2228-96092-99131-15824-9013094"
 
 ##bug - https://github.com/mcgonagle/ansible_f5/issues/21
 ##- include: bigip_snmp_trap/add_trap.yml name="trap" community="community" destination="trap.localdomain" snmp_version="2c"
@@ -48,9 +51,6 @@
 
 ##bug - https://github.com/mcgonagle/ansible_f5/issues/22
 ##- include: bigip_hostname/set_hostname.yml hostname="bigip.localhost.localdomain"
-
-# Issue dhcp needs to be disabled - https://github.com/mcgonagle/ansible_f5/issues/10
-include: bigip_device_dns/set_dns.yml name_server1="8.8.8.8" name_server2="8.8.4.4" search_domain1="localdomain" search_domain2="lab.local" 
 
 ##bug -https://github.com/mcgonagle/ansible_f5/issues/11
 ##- include: bigip_remote_syslog/set_syslog_server.yml remote_host="10.10.10.10" remote_port="514" local_ip="10.0.1.120"
