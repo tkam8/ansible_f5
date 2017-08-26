@@ -32,15 +32,18 @@
          "rows":[
 			{
 			  "row":[
-			     "0",
-			     "bundled:asm-policy-linux-high",
-			     "asm/request/enable/policy"
-			  ]
-			  "row":[
 			     "default",
-				 "",
-				 "forward/request/reset"
-			  ]
+				 "forward/request/reset",
+				 "none"
+			  ]		  
+			},
+			{
+			  "row":[
+			     "0",
+				 "asm/request/enable/policy",
+			     "bundled:asm-policy-high"
+			     
+			  ]				
 			}
          ]
       },
@@ -56,7 +59,7 @@
             "Missing"
          ],
          "rows":[
-             {
+            {
                "row":[
                   "0",
                   "http-uri/request/path",
@@ -66,16 +69,18 @@
 				  "no",
 				  "no"
                ]
+            },
+			{
 			   "row":[
 			      "default",
-				  "",
-				  "",
-				  "",
-				  "",
-				  "",
-				  "",
-			   ]
-            }
+				  "none",
+				  "no",
+				  "none",
+				  "none",
+				  "no",
+				  "no",
+			   ]			
+			}
          ]
       },
       {
@@ -155,7 +160,7 @@
          "rows":[
 			{
 				"row":[
-				  "asm:url=https://github.com/f5devcentral/f5-aws-autoscale/blob/master/bigip_files/asm-policy-linux-high.xml"
+				  "asm:url=https://raw.githubusercontent.com/tkam8/ansible_f5/master/roles/operations/files/asmpolicy/asm-policy-high.xml"
 				]
 			}
          ]
@@ -335,7 +340,7 @@
       {
          "name":"vs__Name",
          "encrypted":"no",
-         "value":"Test_default_vs_80"
+         "value":"HTTP_VS_WAF_Policy"
       },
       {
          "name":"vs__OptionConnectionMirroring",
@@ -414,7 +419,7 @@
       },
       {
          "name":"vs__ProfileHTTP",
-         "value":"",
+         "value":"/Common/http",
          "encrypted":"no"
       },
       {
