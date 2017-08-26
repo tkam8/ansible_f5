@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <policy bigip_version="11.6.0" integrity_check="6d097acbaa3d38a61152dab35e74e52e" name="/Common/linux-high">
   <policy_version>
     <timestamp>2015-05-29T14:53:17Z</timestamp>
@@ -645,7 +646,7 @@ Connection: close</response_header>
       <learn>true</learn>
     </signature_set>
     <enable_staging>false</enable_staging>
-    <staging_period_in_days>1</staging_period_in_days>
+    <staging_period_in_days>0</staging_period_in_days>
     <signature signature_id="200002444">
       <enabled>false</enabled>
       <in_staging>false</in_staging>
