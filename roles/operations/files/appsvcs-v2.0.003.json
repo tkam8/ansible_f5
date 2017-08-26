@@ -30,18 +30,7 @@
             "Parameter"
          ],
          "rows":[
-			{
-			  "row":[
-			     "0",
-			     "bundled:asm-policy-linux-high",
-			     "asm/request/enable/policy"
-			  ]
-			  "row":[
-			     "default",
-				 "",
-				 "forward/request/reset"
-			  ]
-			}
+ 
          ]
       },
       {
@@ -56,26 +45,7 @@
             "Missing"
          ],
          "rows":[
-             {
-               "row":[
-                  "0",
-                  "http-uri/request/path",
-                  "no",
-                  "equals",
-				  "/",
-				  "no",
-				  "no"
-               ]
-			   "row":[
-			      "default",
-				  "",
-				  "",
-				  "",
-				  "",
-				  "",
-				  "",
-			   ]
-            }
+ 
          ]
       },
       {
@@ -153,11 +123,7 @@
             "Resource"
          ],
          "rows":[
-			{
-				"row":[
-				  "asm:url=https://github.com/f5devcentral/f5-aws-autoscale/blob/master/bigip_files/asm-policy-linux-high.xml"
-				]
-			}
+ 
          ]
       },
       {
