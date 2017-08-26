@@ -12,8 +12,8 @@
     snat: "{{ snat }}"
     all_profiles:
       - "{{ all_profiles }}"
-    all_rules:
-      - "{{ all_rules }}"
+#    all_rules:
+#      - "{{ all_rules }}"
     validate_certs: "false"
     state: "{{ state }}"
   delegate_to: localhost
