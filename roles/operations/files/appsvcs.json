@@ -32,18 +32,17 @@
          "rows":[
 			{
 			  "row":[
-			     "default",
-				 "forward/request/reset",
-				 "none"
-			  ]		  
-			},
-			{
-			  "row":[
 			     "0",
 				 "asm/request/enable/policy",
 			     "bundled:asm-policy-high"
-			     
-			  ]				
+			  ]									  
+			},
+			{
+			  "row":[
+			     "default",
+				 "forward/request/select/pool",
+				 "appsvcs_pool_0"
+			  ]			
 			}
          ]
       },
@@ -64,8 +63,8 @@
                   "0",
                   "http-uri/request/path",
                   "no",
-                  "equals",
-				  "/",
+                  "contains",
+				  "wordpress.f5demo.com",
 				  "no",
 				  "no"
                ]
@@ -73,10 +72,10 @@
 			{
 			   "row":[
 			      "default",
-				  "none",
+				  " ",
 				  "no",
-				  "none",
-				  "none",
+				  " ",
+				  " ",
 				  "no",
 				  "no",
 			   ]			
