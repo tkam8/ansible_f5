@@ -3,6 +3,10 @@
   vars:
     - key: "K5599-98071-25338-63992-9099657"
 
+##bug - https://github.com/mcgonagle/ansible_f5/issues/21
+##- include: bigip_snmp_trap/add_trap.yml name="trap" community="community" destination="trap.localdomain" snmp_version="2c"
+- include: bigip_provision/provision_module.yml module="asm" level="nominal"
+    
 - include: bigip_vlan/add_untagged_vlan.yml 
   vars:
     - name: "external" 
@@ -75,7 +79,5 @@
 ##bug - https://github.com/mcgonagle/ansible_f5/issues/23
 ##- include: bigip_partition/add_partition.yml name="foo"
 
-##bug - https://github.com/mcgonagle/ansible_f5/issues/21
-##- include: bigip_snmp_trap/add_trap.yml name="trap" community="community" destination="trap.localdomain" snmp_version="2c"
-#- include: bigip_provision/provision_module.yml module="asm" level="nominal"
+
 ...
