@@ -505,7 +505,7 @@ Connection: close</response_header>
       <description></description>
       <user_config_level>basic</user_config_level>
       <check_metachars>true</check_metachars>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <last_updated>2015-05-29T14:53:14Z</last_updated>
       <clickjacking_protection>
         <enabled>false</enabled>
@@ -545,7 +545,7 @@ Connection: close</response_header>
       <maximum_length>10</maximum_length>
       <match_regular_expression></match_regular_expression>
       <is_sensitive>false</is_sensitive>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <last_updated>2015-05-29T14:53:14Z</last_updated>
       <parameter_name_metachars>
         <check_metachars>true</check_metachars>
@@ -596,7 +596,7 @@ Connection: close</response_header>
   <headers>
     <allowed_modified_cookie name="*" type="wildcard">
       <learning_mode>Never</learning_mode>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <enforcement_mode>allow</enforcement_mode>
       <http_only>false</http_only>
       <secure>false</secure>
