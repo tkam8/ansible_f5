@@ -487,7 +487,7 @@ Connection: close</response_header>
       <query_string_length>10000</query_string_length>
       <post_data_length>10000</post_data_length>
       <check_response>false</check_response>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <last_updated>2015-05-29T14:53:14Z</last_updated>
       <check_url_length>true</check_url_length>
       <check_request_length>true</check_request_length>
