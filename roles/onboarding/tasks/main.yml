@@ -4,7 +4,7 @@
 
 - include: bigip_license/license.yml 
   vars:
-    - key: "O2228-96092-99131-15824-9013094"
+    - key: "EZVXO-XCGVI-UFDQN-XLOWX-EQGXVQN"
 
 ##bug - https://github.com/mcgonagle/ansible_f5/issues/21
 ##- include: bigip_snmp_trap/add_trap.yml name="trap" community="community" destination="trap.localdomain" snmp_version="2c"
