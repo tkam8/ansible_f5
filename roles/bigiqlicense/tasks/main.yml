@@ -8,6 +8,7 @@
 - include: bigiq_regkey_pool/regkey_pool.yml
   vars:
     - regkey_pool_name: "terry_pool"
+  when: state == "present"
 
 #- include: bigiq_regkey_license/regkey_license.yml
 #  vars:
