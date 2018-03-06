@@ -1,0 +1,10 @@
+---
+- name: Create a registration key (regkey) pool to hold individual device licenses
+  bigiq_regkey_pool:
+    name: "{{ regkey_pool_name }}"
+    password: "{{ password }}"
+    server: "{{ ansible_host }}"
+    state: present
+    user: "{{ username }}"
+  delegate_to: localhost
+...

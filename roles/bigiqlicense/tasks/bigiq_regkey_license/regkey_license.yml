@@ -1,0 +1,10 @@
+- name: Add a registration key license to a pool
+  bigiq_regkey_license:
+    regkey_pool: "{{ regkey_pool_name }}"
+    license_key: "{{ license_key }}"
+    accept_eula: yes
+    password: "{{ password }}"
+    server: "{{ ansible_host }}"
+    state: present
+    user: "{{ username }}"
+  delegate_to: localhost

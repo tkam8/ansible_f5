@@ -1,0 +1,10 @@
+---
+# Issue dhcp needs to be disabled - https://github.com/mcgonagle/ansible_f5/issues/10
+#- include: bigip_device_dns/set_dns.yml name_server1="8.8.8.8" name_server2="8.8.4.4" search_domain1="localdomain" search_domain2="lab.local" 
+
+- include: bigip_license/license.yml 
+  vars:
+    - key: "WLSXL-OWKKJ-RIDII-RFXNK-OLQPMPB"
+
+
+

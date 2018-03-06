@@ -1,0 +1,12 @@
+---
+  - hosts: bigiq
+    gather_facts: False
+    roles:
+      - bigiqlicense
+
+
+  - hosts: bigip
+    gather_facts: False
+    roles:
+     - bigiplicense
+...
