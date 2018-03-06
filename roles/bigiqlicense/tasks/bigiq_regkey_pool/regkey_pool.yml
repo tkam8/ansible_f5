@@ -4,7 +4,7 @@
     name: "{{ regkey_pool_name }}"
     password: "{{ password }}"
     server: "{{ ansible_host }}"
-    state: present
+    state: "{{ state }}"
     user: "{{ username }}"
   delegate_to: localhost
 ...

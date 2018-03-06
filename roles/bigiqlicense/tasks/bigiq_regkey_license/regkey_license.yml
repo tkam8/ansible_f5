@@ -5,6 +5,6 @@
     accept_eula: yes
     password: "{{ password }}"
     server: "{{ ansible_host }}"
-    state: present
+    state: "{{ state }}"
     user: "{{ username }}"
   delegate_to: localhost
