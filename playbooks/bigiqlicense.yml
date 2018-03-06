@@ -5,8 +5,8 @@
       - bigiqlicense
 
 
-  - hosts: bigip
-    gather_facts: False
-    roles:
-     - bigiplicense
+#  - hosts: bigip
+#    gather_facts: False
+#    roles:
+#     - bigiplicense
 ...
