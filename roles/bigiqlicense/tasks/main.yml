@@ -8,7 +8,7 @@
     - regkey_pool_name: "terry_pool"
   when: state == "present"
 
-- include: bigiq_regkey_license/regkey_license.yml
+- include: bigiq_regkey_license/add_license.yml
   vars:
     - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
     - regkey_pool_name: "terry_pool"
@@ -17,7 +17,7 @@
 ###############
 #Remove objects
 ###############
-- include: bigiq_regkey_license/regkey_license.yml
+- include: bigiq_regkey_license/remove_license.yml
   vars:
     - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
     - regkey_pool_name: "terry_pool"
