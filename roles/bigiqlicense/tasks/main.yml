@@ -1,19 +1,33 @@
 ---
 
-#
-
-# Issue dhcp needs to be disabled - https://github.com/mcgonagle/ansible_f5/issues/10
-#- include: bigip_device_dns/set_dns.yml name_server1="8.8.8.8" name_server2="8.8.4.4" search_domain1="localdomain" search_domain2="lab.local" 
-
+############
+#Add objects
+############
 - include: bigiq_regkey_pool/regkey_pool.yml
   vars:
     - regkey_pool_name: "terry_pool"
   when: state == "present"
 
-#- include: bigiq_regkey_license/regkey_license.yml
-#  vars:
-#    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
+- include: bigiq_regkey_license/regkey_license.yml
+  vars:
+    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
+    - regkey_pool_name: "terry_pool"
+  when: state == "present"
 
-- include: bigip_config/save_config.yml
+###############
+#Remove objects
+###############
+- include: bigiq_regkey_license/regkey_license.yml
+  vars:
+    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
+    - regkey_pool_name: "terry_pool"
+  when: state == "absent"
+
+- include: bigiq_regkey_pool/regkey_pool.yml
+  vars:
+    - regkey_pool_name: "terry_pool"
+  when: state == "absent"
+
+
 
 ...

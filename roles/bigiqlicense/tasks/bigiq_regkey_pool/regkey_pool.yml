@@ -6,6 +6,6 @@
     server: "{{ ansible_host }}"
     state: "{{ state }}"
     user: "{{ username }}"
-    validate_certs: "no"
+    validate_certs: no
   delegate_to: localhost
 ...
