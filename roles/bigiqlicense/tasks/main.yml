@@ -17,11 +17,11 @@
 ###############
 #Remove objects
 ###############
-- include: bigiq_regkey_license/remove_license.yml
-  vars:
-    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
-    - regkey_pool_name: "terry_pool"
-  when: state == "absent"
+#- include: bigiq_regkey_license/remove_license.yml
+#  vars:
+#    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
+#    - regkey_pool_name: "terry_pool"
+#  when: state == "absent"
 
 - include: bigiq_regkey_pool/regkey_pool.yml
   vars:
