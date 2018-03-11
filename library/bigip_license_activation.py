@@ -23,7 +23,6 @@ def get_bigiq_token(data):
 	body = {
 		"username": bigiq_username,
 		"password": bigiq_password,
-		"loginProviderName": "local"
 	}
 
 	result = requests.post(url, json.dumps(body), headers=headers, verify=False)
@@ -132,7 +131,7 @@ def activate_bigip(module, data):
 	module.log("(start) mgmt ip")
 	url = "https://{}/mgmt/tm/sys/global-settings" . format(bigip_server)
 	body = {
-		"guiSetup": "disabled",
+		"guiSetup": "disabled"
 	}
 	requests.patch(url, json.dumps(body), verify=False, auth=(bigip_username, bigip_password))
 
