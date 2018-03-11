@@ -3,16 +3,20 @@
 ############
 #Add objects
 ############
-- include: bigiq_regkey_pool/regkey_pool.yml
-  vars:
-    - regkey_pool_name: "terry_pool"
-  when: state == "present"
 
-- include: bigiq_regkey_license/add_license.yml
-  vars:
-    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
-    - regkey_pool_name: "terry_pool"
-  when: state == "present"
+- include: bigiq_regkey_license_custom/regkey_license.yml
+
+
+#- include: bigiq_regkey_pool/regkey_pool.yml
+#  vars:
+#    - regkey_pool_name: "terry_pool"
+#  when: state == "present"
+
+#- include: bigiq_regkey_license/add_license.yml
+#  vars:
+#    - license_key: "RRDDN-KUGWU-YGCKY-BSTHW-HMHEEBQ"
+#    - regkey_pool_name: "terry_pool"
+#  when: state == "present"
 
 ###############
 #Remove objects
@@ -23,10 +27,10 @@
 #    - regkey_pool_name: "terry_pool"
 #  when: state == "absent"
 
-- include: bigiq_regkey_pool/regkey_pool.yml
-  vars:
-    - regkey_pool_name: "terry_pool"
-  when: state == "absent"
+#- include: bigiq_regkey_pool/regkey_pool.yml
+#  vars:
+#    - regkey_pool_name: "terry_pool"
+#  when: state == "absent"
 
 
 

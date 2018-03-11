@@ -1,5 +1,5 @@
 ---
-  - hosts: bigiq
+  - hosts: bigip,bigiq
     gather_facts: False
     roles:
       - bigiqlicense
