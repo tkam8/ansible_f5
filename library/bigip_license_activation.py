@@ -22,7 +22,8 @@ def get_bigiq_token(data):
 	}
 	body = {
 		"username": bigiq_username,
-		"password": bigiq_password
+		"password": bigiq_password,
+		"loginProviderName": "local"
 	}
 
 	result = requests.post(url, json.dumps(body), headers=headers, verify=False)
