@@ -1,0 +1,13 @@
+- name: create Web Demo resources
+  hosts: 127.0.0.1
+
+  tasks:
+    - name: Activate BIGIP
+      bigip_license_activation:
+        bigiq_server: "10.10.1.110"
+        regkey_pool_id: "fa03c6df-e472-4c67-91ed-35bd3e4806e1"
+        bigiq_username: "admin"
+        bigiq_password: "admin"
+        bigip_username: "admin"
+        bigip_password: "admin"
+        bigip_server: "10.10.1.122"
