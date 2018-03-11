@@ -171,6 +171,15 @@ def activate_bigip(module, data):
 	return False, True, "done"
 
 
+def activate_bigips(module, data):
+
+	instances_name = data['bigip_instances_name']
+
+	for instance_name in instances_name:
+		activate_bigip(module, data, instance_name)
+
+	return False, True, "done"
+
 
 def main():
 
@@ -182,6 +191,7 @@ def main():
 		"bigip_username": {"required": True, "type": "str"},
 		"bigip_password": {"required": True, "type": "str"},
 		"bigip_server": {"required": True, "type": "str"},
+		"bigip_instances_name": {"required":True, "type": "list"}
 	}
 	module = AnsibleModule(argument_spec=fields)
 

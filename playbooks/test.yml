@@ -11,3 +11,6 @@
         bigip_username: "{{ username }}"
         bigip_password: "{{ password }}"
         bigip_server: "10.0.1.201"
+        bigip_instances_name: 
+         - BigIP1
+       delegate_to: localhost
