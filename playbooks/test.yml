@@ -4,12 +4,11 @@
   tasks:
     - name: Activate BIGIP
       bigip_license_activation:
-        bigiq_server: "10.0.0.191"
+        bigiq_server: "10.0.0.177"
         regkey_pool_id: "d0f9ee9d-508f-46bb-b728-4d5916398142"
         bigiq_username: "{{ username }}"
         bigiq_password: "{{ password }}"
         bigip_username: "{{ username }}"
         bigip_password: "{{ password }}"
-        bigip_server: "10.0.1.201"
-        bigip_instances_name: BigIP1
+        bigip_server: "10.0.0.201"
       delegate_to: localhost
