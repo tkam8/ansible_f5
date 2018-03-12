@@ -176,7 +176,7 @@ def main():
 
 	fields = {
 		"bigiq_server": {"required": True, "type": "str"},
-		"regkey_pool_id": {"required": True, "type": "str" },
+		"regkey_pool_id": {"required": True, "type": "str"},
 		"bigiq_username": {"required": True, "type": "str"},
 		"bigiq_password": {"required": True, "type": "str"},
 		"bigip_username": {"required": True, "type": "str"},
