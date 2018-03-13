@@ -110,7 +110,7 @@ def activate_bigip(module, data):
 		result = requests.get(url, verify=False, auth=(bigip_username, bigip_password))
 		result_json = result.json()
 
-		if "items" in result_json and result_json["items"][0]["name"].startswith(bigip_server):
+		if "items" in result_json:
 			break
 		else:
 			module.log("checking management ip")
