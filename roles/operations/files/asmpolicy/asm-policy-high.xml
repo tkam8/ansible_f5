@@ -3267,8 +3267,8 @@ Connection: close</response_header>
       <block>true</block>
       <learn>true</learn>
     </signature_set>
-    <enable_staging>false</enable_staging>
-    <place_signatures_in_staging>false</place_signatures_in_staging>
+    <enable_staging>true</enable_staging>
+    <place_signatures_in_staging>true</place_signatures_in_staging>
     <sigfile_timestamp>2017-05-10 11:22:38</sigfile_timestamp>
     <signature signature_id="200000001">
       <enabled>true</enabled>
