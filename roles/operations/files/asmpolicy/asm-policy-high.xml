@@ -1907,7 +1907,7 @@ Connection: close</response_header>
       <query_string_length>1000</query_string_length>
       <post_data_length>1000</post_data_length>
       <check_response>false</check_response>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <last_updated>2019-05-20T08:34:03Z</last_updated>
       <check_url_length>true</check_url_length>
       <check_request_length>true</check_request_length>
@@ -1985,7 +1985,7 @@ Connection: close</response_header>
       <user_config_level>advanced</user_config_level>
       <check_metachars>false</check_metachars>
       <check_methods>false</check_methods>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <last_updated>2019-05-20T08:34:28Z</last_updated>
       <clickjacking_protection>
         <enabled>false</enabled>
@@ -2325,7 +2325,7 @@ Connection: close</response_header>
       <description></description>
       <user_config_level>advanced</user_config_level>
       <check_metachars>false</check_metachars>
-      <in_staging>true</in_staging>
+      <in_staging>false</in_staging>
       <last_updated>2019-05-20T08:34:23Z</last_updated>
       <cors_enforcement_enable>false</cors_enforcement_enable>
       <allow_cors>false</allow_cors>
