@@ -16,7 +16,7 @@
     <path_parameter_handling>as parameters</path_parameter_handling>
     <mask_sensitive>true</mask_sensitive>
     <trigger_asm_irule_event>Disabled</trigger_asm_irule_event>
-    <staging_period_in_days>1</staging_period_in_days>
+    <staging_period_in_days>0</staging_period_in_days>
     <enable_correlation>true</enable_correlation>
   </general>
   <antivirus>
